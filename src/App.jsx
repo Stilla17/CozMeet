@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Menu from "./Components/Menu/Menu";
+import InfoUser from "./Components/InfoUser/InfoUser";
 
 function App() {
-
   return (
     <>
-
-      <h1 className='text-center'>Serkan</h1>
-
+      <Menu />
+      <InfoUser />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
