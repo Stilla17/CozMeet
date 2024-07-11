@@ -10,10 +10,12 @@ function App() {
     <>
       <Navbar />
       <div className="max-w-[1432px] mx-auto">
-        <InfoUser />
-        <Menu />
+        {/* <InfoUser /> */}
+        {/* <Menu /> */}
       </div>
+      <div className="max-w-[1432px] mx-auto">
         <Messages />
+      </div>
     </>
   );
 }

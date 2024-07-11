@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.css-1pat1mm-MuiButtonBase-root-MuiTab-root {
+  min-width: 0 !important;
+}
 
+.css-1fy22qb-MuiButtonBase-root-MuiTab-root {
+  padding: 0 !important;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  display: flex;
+  justify-content: space-between !important;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -16,5 +27,5 @@
 }
 
 body {
-  background-color: #F6F6F6 !important;
+  background-color: #f6f6f6 !important;
 }
