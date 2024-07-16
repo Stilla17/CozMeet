@@ -1,30 +1,31 @@
-import Event from '../../Pages/Event'
-import Friends from '../../Pages/Friends'
-import Layout from '../../Pages/Layout'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "../../Pages/Layout";
+import Feed from "../../Pages/Feed";
+import Friends from "../../Pages/Friends";
 
 const Route = () => {
-    const router = createBrowserRouter([
+  const router = createBrowserRouter([
+    {
+      element: <Layout />,
+      children: [
         {
-            element: <Layout />,
-            children: [
-                {
-                    path: "/",
-                    element: <Friends />
-                },
-                {
-                    path: "event",
-                    element: <Event />
-                }
-            ]
-        }
-    ])
+          path: "/",
+          element: <Feed />,
+        },
+        {
+          path: "friends",
+          element: <Friends />,
+        },
+      ],
+    },
+  ]);
 
-    return (
-        <div>
-            <RouterProvider router={router} />
-        </div>
-    )
-}
+  return (
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  );
+};
 
 export default Route;
