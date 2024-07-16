@@ -10,7 +10,7 @@ function Layout({ children }) {
         <div>
             <Navbar />
 
-            <div className=''>
+            <div className='flex justify-between'>
                 <div className="max-w-[1432px] mx-auto">
                     <InfoUser />
                     <Menu />
