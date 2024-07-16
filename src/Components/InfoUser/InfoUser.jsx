@@ -3,7 +3,7 @@ import img1 from "../../assets/images/img1.jpg";
 
 function InfoUser() {
   return (
-    <div className="max-w-[20%] bg-white rounded-xl shadow-md overflow-hidden ">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden ">
       <div className="relative">
         <img className="h-48 w-full object-cover" src={img1} alt="background" />
         <div className="absolute top-24 left-1/2 transform -translate-x-1/2 w-24 h-24 border-4 border-white rounded-full">

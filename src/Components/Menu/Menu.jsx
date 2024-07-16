@@ -9,53 +9,60 @@ import MenuList from "@mui/material/MenuList";
 import MenuItem from "@mui/material/MenuItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import { Link } from "react-router-dom";
 
 const menu = [
   {
     icon: <RiHome3Line className="text-[24px] icon" />,
     title: "Feed",
+    path: "/",
   },
   {
     icon: <TbUsersMinus className="text-[24px] icon" />,
     title: "Friends",
+    path: "friends",
   },
   {
     icon: <TbCalendarEvent className="text-[24px] icon" />,
     title: "Event",
+    path: "event",
   },
   {
     icon: <PiImageSquareThin className="text-[24px] icon" />,
     title: "Photos",
+    path: "photos",
   },
   {
     icon: <PiShoppingCartSimpleLight className="text-[24px] icon" />,
     title: "Marketplace",
+    path: "market",
   },
 ];
 
 function Menu() {
   return (
-    <div className="max-w-[20%] bg-white rounded-xl shadow-lg overflow-hidden my-6">
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden my-6">
       <MenuList sx={{ padding: "12px 12px" }}>
         {menu.map((item, index) => (
-          <MenuItem
-            key={index}
-            sx={{
-              marginBottom: 2,
-              padding: "12px 12px",
-              "&:hover": {
-                backgroundColor: "blue",
-                color: "white",
-                borderRadius: "7px",
-                "& .icon": {
+          <Link to={item.path} key={index}>
+            <MenuItem
+              sx={{
+                marginBottom: 2,
+                padding: "12px 12px",
+                "&:hover": {
+                  backgroundColor: "blue",
                   color: "white",
+                  borderRadius: "7px",
+                  "& .icon": {
+                    color: "white",
+                  },
                 },
-              },
-            }}
-          >
-            <ListItemIcon>{item.icon}</ListItemIcon>
-            <ListItemText>{item.title}</ListItemText>
-          </MenuItem>
+              }}
+            >
+              <ListItemIcon>{item.icon}</ListItemIcon>
+              <ListItemText>{item.title}</ListItemText>
+            </MenuItem>
+          </Link>
         ))}
       </MenuList>
     </div>

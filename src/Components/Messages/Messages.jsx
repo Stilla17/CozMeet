@@ -57,7 +57,7 @@ function Messages() {
   };
 
   return (
-    <div className="max-w-[20%] bg-white shadow-md rounded-lg overflow-hidden">
+    <div className="bg-white shadow-md rounded-lg overflow-hidden">
       <Box sx={{ width: "100%" }}>
         <Box
           sx={{
