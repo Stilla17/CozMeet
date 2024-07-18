@@ -15,6 +15,19 @@
   justify-content: space-between !important;
 }
 
+.slick-next:before {
+  content: ">";
+  color: black;
+}
+.slick-prev::before {
+  content: "<";
+  color: black;
+}
+
+.modalBack {
+  background-color: #0000004d;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
