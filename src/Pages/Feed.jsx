@@ -1,13 +1,12 @@
 import React from "react";
+import PostContent from "../Components/ContentPost/PostContent";
+import CreatePost from "../Components/CreatePost/CreatePost";
 
 function Feed() {
   return (
-    <div>
-      <div>
-        <img src="" alt="" />
-        <input type="text" placeholder="What's on your mind?" />
-        <button className="">Share Point</button>
-      </div>
+    <div className="w-full mx-auto">
+      <CreatePost />
+      <PostContent />
     </div>
   );
 }
