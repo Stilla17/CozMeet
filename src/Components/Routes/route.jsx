@@ -5,27 +5,27 @@ import Feed from "../../Pages/Feed";
 import Friends from "../../Pages/Friends";
 
 const Route = () => {
-  const router = createBrowserRouter([
-    {
-      element: <Layout />,
-      children: [
+    const router = createBrowserRouter([
         {
-          path: "/",
-          element: <Feed />,
+            element: <Layout />,
+            children: [
+                {
+                    path: "/",
+                    element: <Feed />,
+                },
+                {
+                    path: "friends",
+                    element: <Friends />,
+                },
+            ],
         },
-        {
-          path: "friends",
-          element: <Friends />,
-        },
-      ],
-    },
-  ]);
+    ]);
 
-  return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
-  );
+    return (
+        <div>
+            <RouterProvider router={router} />
+        </div>
+    );
 };
 
 export default Route;

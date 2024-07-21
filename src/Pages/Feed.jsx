@@ -3,24 +3,11 @@ import React from "react";
 function Feed() {
   return (
     <div>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
-      <h1>Feed</h1>
+      <div>
+        <img src="" alt="" />
+        <input type="text" placeholder="What's on your mind?" />
+        <button className="">Share Point</button>
+      </div>
     </div>
   );
 }

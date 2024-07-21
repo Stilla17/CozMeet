@@ -21,6 +21,10 @@ function InfoUser() {
         </div>
         <div className="mt-4 flex justify-between text-center rounded-lg  bg-gray-200 gap-4 px-4 py-2">
           <div>
+            <h3 className="text-lg font-medium">250</h3>
+            <p className="text-gray-500">Post</p>
+          </div>
+          <div>
             <h3 className="text-lg font-medium">2022</h3>
             <p className="text-gray-500">Followers</p>
           </div>
@@ -28,10 +32,7 @@ function InfoUser() {
             <h3 className="text-lg font-medium">590</h3>
             <p className="text-gray-500">Following</p>
           </div>
-          <div>
-            <h3 className="text-lg font-medium">250</h3>
-            <p className="text-gray-500">Post</p>
-          </div>
+
         </div>
         <div className="mt-6 text-center">
           <button className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">

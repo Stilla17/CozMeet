@@ -1,24 +1,31 @@
-import React from 'react'
+import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
-import { Outlet } from 'react-router-dom';
-import Menu from "../Components/Menu/Menu";
+import Menu from "../Components/Menu/Menu.jsx";
 import InfoUser from "../Components/InfoUser/InfoUser";
-import CreatePost from "../Components/CreatePost/CreatePost";
+import Messages from "../Components/Messages/Messages.jsx";
+import { Outlet } from "react-router";
 
 function Layout({ children }) {
     return (
-        <div>
+        <>
             <Navbar />
-
-            <div className='flex justify-between'>
-                <div className="max-w-[1432px] mx-auto">
+            <div
+                className="grid grid-cols-3 gap-[2%] max-w-[1440px] mx-auto mt-6"
+                style={{ gridTemplateColumns: "20% 56% 20%" }}
+            >
+                <div>
                     <InfoUser />
                     <Menu />
                 </div>
+
                 <Outlet />
+
+                <div>
+                    <Messages />
+                </div>
             </div>
-        </div>
-    )
+        </>
+    );
 }
 
 export default Layout;
