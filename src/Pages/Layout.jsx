@@ -8,21 +8,23 @@ import { Outlet } from "react-router";
 function Layout({ children }) {
     return (
         <>
-            <Navbar />
+            <header>
+                <Navbar />
+            </header>
             <div
                 className="grid grid-cols-3 gap-[2%] max-w-[1440px] mx-auto mt-6"
                 style={{ gridTemplateColumns: "20% 56% 20%" }}
             >
-                <div>
+                <aside>
                     <InfoUser />
                     <Menu />
-                </div>
+                </aside>
 
                 <Outlet />
 
-                <div>
+                <aside>
                     <Messages />
-                </div>
+                </aside>
             </div>
         </>
     );

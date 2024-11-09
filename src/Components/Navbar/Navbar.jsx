@@ -6,6 +6,7 @@ import user from "../../assets/user.jpg";
 import { IoIosArrowDown } from "react-icons/io";
 import { RxExit } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -63,10 +64,10 @@ function Navbar() {
                     exit={{ opacity: 0, y: -10 }}
                     className="absolute top-[55px] right-[50px]"
                   >
-                    <div className="flex gap-2 items-center bg-white text-[16px] p-2 shadow-md rounded-lg">
+                    <Link to='login' className="flex gap-2 items-center bg-white text-[16px] p-2 shadow-md rounded-lg">
                       <RxExit />
                       <p>Exit</p>
-                    </div>
+                    </Link>
                   </motion.div>
                 )}
               </AnimatePresence>
